@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --primary-color: #043382;
+    --secondary-color: #191919;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    background-color: rgb(207, 207, 207);
+}
+.resume{
+    display: flex;
+    position: relative;
+    width: 900px;
+    margin: 20px 0;
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: white;
+}
+
+
+
+/* ========================================  NAME ROW SECTION  =============================== */
+.resume .col1{
+    background-color: var(--secondary-color);
+    color: white;
+    flex: 35;
+    /* width: 300px; */
+    margin-left: 50px;
+    padding: 0 40px;
+    padding-bottom: 50px;
+}
+
+
+.resume .name-row{
+    background-color: var(--primary-color);
+    padding: 30px 0;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    width: 100%;
+    box-shadow: 0 10px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+.resume .name-row .name{
+    /* background-color: rgb(163, 163, 163); */
+    color: white;
+    display: inline-block;   
+    margin-left: 400px;
+    font-size: 21px;
+    line-height: 50px;
+}
+.resume .name-row .name h3{
+    font-weight: 400;
+}
+.resume .name-row .profile-image{
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    top: -50px;
+    left: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid var(--primary-color);
+}
+.resume .name-row .profile-image img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ========================================  ABOUT SECTION  =============================== */
+.col1 .about{
+    /* background-color: rgba(238, 238, 130, 0.445); */
+    text-align: center;
+    margin-top: 335px;
+}
+.col1 .about p:first-child{
+    font-size: 24px;
+}
+.col1 .about p:nth-child(2){
+    margin-top: 10px;
+
+}
+
+/* ========================================  INFORMATION SECTION  =============================== */
+.col1 .info{
+    /* background-color: rgba(255, 255, 95, 0.363); */
+    margin-top: 30px;
+
+}
+
+.col1 .info .contact, .info .email, .info .address{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    gap: 10px;
+}
+.col1 .info .icon{
+    /* background-color: var(--primary-color); */
+    background-color: #0774bb;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--secondary-color);
+}
+/* .col1 .info p{
+    font-size: 14px;
+} */
+
+/* ========================================  INFORMATION SECTION  =============================== */
+.col1 .experties{
+    margin-top: 40px;
+}
+.col1 .experties #skills-btn{
+    border: 2px solid #0774bb;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+.col1 .experties .programming-lang{
+    margin-left: 45px;
+    margin-top: 10px;
+    line-height: 2;
+}
+
+.resume .col2{
+    flex: 65;
+    padding: 0 32px;
+    padding-bottom: 50px;
+}
+
+
+/* ========================================  EXPERIENCE SECTION  =============================== */
+.col2 .experience{
+    margin-top: 335px;
+}
+
+.col2 .experience #experience-btn{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    width: 230px;
+    font-size: 18px;
+}
+.col2 .experience .details{
+    margin-left: 10px;
+    margin-top: 16px;
+    line-height: 26px;
+}
+.col2 .experience .details p:first-child{
+    font-weight: 700;
+}
+.col2 .experience .details p:nth-child(2){
+    font-weight: 700;
+}
+.col2 .experience .details p:nth-child(3){
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+
+/* ========================================  LANGUAGE SECTION  =============================== */
+.col2 .language{
+    margin-top: 60px;
+}
+
+.col2 .language #language-btn{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    width: 230px;
+    font-size: 18px;
+}
+
+.col2 .language .language-list{
+    margin-left: 30px;
+    margin-top: 16px;
+    line-height: 26px;
+
+}
+
+
+/* ========================================  EXPERIENCE SECTION  =============================== */
+.col2 .education{
+    margin-top: 60px;
+}
+
+.col2 .education #education-btn{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    width: 230px;
+    font-size: 18px;
+}
+.col2 .education .details{
+    margin-left: 10px;
+    margin-top: 16px;
+    line-height: 26px;
+}
+.col2 .education .details p:first-child{
+    font-weight: 700;
+}
+.col2 .education .details p:nth-child(2){
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+
+
+
+
+
+
